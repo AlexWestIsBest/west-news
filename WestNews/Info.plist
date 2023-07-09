@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>West News needs your location to deliver accurate weather forecasts each morning.</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>accelerometer</string>
+		<string>arkit</string>
+		<string>arm64</string>
+		<string>auto-focus-camera</string>
+		<string>camera-flash</string>
+		<string>front-facing-camera</string>
+		<string>gps</string>
+		<string>location-services</string>
+		<string>microphone</string>
+		<string>still-camera</string>
+		<string>video-camera</string>
+		<string>wifi</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.alexwesterlund.WestNews</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>westnews</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

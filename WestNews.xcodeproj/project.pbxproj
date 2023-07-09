@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		594911BC2A3B934500999E76 /* DescriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594911BB2A3B934500999E76 /* DescriptionManager.swift */; };
+		594911F32A4F78EB00999E76 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594911F22A4F78EB00999E76 /* LocationManager.swift */; };
+		594911F52A4F7CCA00999E76 /* LocationBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594911F42A4F7CCA00999E76 /* LocationBlock.swift */; };
+		594911F92A52303600999E76 /* AlarmBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594911F82A52303600999E76 /* AlarmBuilder.swift */; };
+		594911FB2A52333500999E76 /* DynamicFootnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594911FA2A52333500999E76 /* DynamicFootnote.swift */; };
+		598305DC29F0B6BE000D717F /* DescriptionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598305DB29F0B6BE000D717F /* DescriptionBlock.swift */; };
+		59895C1229D630C600934CA6 /* WestNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59895C1129D630C600934CA6 /* WestNewsApp.swift */; };
+		59895C1429D630C600934CA6 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59895C1329D630C600934CA6 /* HomePageView.swift */; };
+		59895C1629D630C700934CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59895C1529D630C700934CA6 /* Assets.xcassets */; };
+		59895C1929D630C700934CA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59895C1829D630C700934CA6 /* Preview Assets.xcassets */; };
+		59B74D052A03EEB600968A9F /* NightstandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D042A03EEB600968A9F /* NightstandView.swift */; };
+		59B74D0F2A059BB800968A9F /* HearLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D0E2A059BB800968A9F /* HearLatest.swift */; };
+		59B74D112A059F4600968A9F /* MyDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D102A059F4600968A9F /* MyDescription.swift */; };
+		59B74D132A05A65500968A9F /* ActualAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D122A05A65500968A9F /* ActualAlarm.swift */; };
+		59B74D152A05E2A100968A9F /* AlarmSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D142A05E2A100968A9F /* AlarmSettings.swift */; };
+		59B74D182A093DDE00968A9F /* NotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D172A093DDE00968A9F /* NotifManager.swift */; };
+		59B74D1B2A09BC6200968A9F /* FocusModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B74D1A2A09BC6200968A9F /* FocusModeView.swift */; };
+		59CAA84529E733D800F46629 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA84429E733D800F46629 /* SetupView.swift */; };
+		59CAA85029EDFE6C00F46629 /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA84F29EDFE6C00F46629 /* MediaPlayer.swift */; };
+		59CCE2A72A2A984C002F165B /* Tuesday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE29F2A2A984B002F165B /* Tuesday.caf */; };
+		59CCE2A82A2A984C002F165B /* Sunday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A02A2A984B002F165B /* Sunday.caf */; };
+		59CCE2A92A2A984C002F165B /* Before7am.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A12A2A984B002F165B /* Before7am.caf */; };
+		59CCE2AA2A2A984C002F165B /* Wednesday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A22A2A984B002F165B /* Wednesday.caf */; };
+		59CCE2AB2A2A984C002F165B /* Birthday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A32A2A984C002F165B /* Birthday.caf */; };
+		59CCE2AC2A2A984C002F165B /* Thursday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A42A2A984C002F165B /* Thursday.caf */; };
+		59CCE2AD2A2A984C002F165B /* Saturday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A52A2A984C002F165B /* Saturday.caf */; };
+		59CCE2AE2A2A984C002F165B /* Friday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2A62A2A984C002F165B /* Friday.caf */; };
+		59CCE2B22A2A9A78002F165B /* Monday.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2B12A2A9A78002F165B /* Monday.caf */; };
+		59CCE2B42A2A9C3F002F165B /* WeekendMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59CCE2B32A2A9C3F002F165B /* WeekendMusic.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		594911BB2A3B934500999E76 /* DescriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionManager.swift; sourceTree = "<group>"; };
+		594911F22A4F78EB00999E76 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		594911F42A4F7CCA00999E76 /* LocationBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBlock.swift; sourceTree = "<group>"; };
+		594911F82A52303600999E76 /* AlarmBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmBuilder.swift; sourceTree = "<group>"; };
+		594911FA2A52333500999E76 /* DynamicFootnote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFootnote.swift; sourceTree = "<group>"; };
+		598305DB29F0B6BE000D717F /* DescriptionBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionBlock.swift; sourceTree = "<group>"; };
+		59895C0E29D630C600934CA6 /* WestNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WestNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59895C1129D630C600934CA6 /* WestNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestNewsApp.swift; sourceTree = "<group>"; };
+		59895C1329D630C600934CA6 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		59895C1529D630C700934CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59895C1829D630C700934CA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59B74D042A03EEB600968A9F /* NightstandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightstandView.swift; sourceTree = "<group>"; };
+		59B74D0E2A059BB800968A9F /* HearLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearLatest.swift; sourceTree = "<group>"; };
+		59B74D102A059F4600968A9F /* MyDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDescription.swift; sourceTree = "<group>"; };
+		59B74D122A05A65500968A9F /* ActualAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualAlarm.swift; sourceTree = "<group>"; };
+		59B74D142A05E2A100968A9F /* AlarmSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettings.swift; sourceTree = "<group>"; };
+		59B74D172A093DDE00968A9F /* NotifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifManager.swift; sourceTree = "<group>"; };
+		59B74D1A2A09BC6200968A9F /* FocusModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeView.swift; sourceTree = "<group>"; };
+		59B74D362A0EC10C00968A9F /* WestNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WestNews.entitlements; sourceTree = "<group>"; };
+		59CAA84429E733D800F46629 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		59CAA84F29EDFE6C00F46629 /* MediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
+		59CAA85129EF2BC300F46629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		59CCE29F2A2A984B002F165B /* Tuesday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuesday.caf; sourceTree = "<group>"; };
+		59CCE2A02A2A984B002F165B /* Sunday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunday.caf; sourceTree = "<group>"; };
+		59CCE2A12A2A984B002F165B /* Before7am.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Before7am.caf; sourceTree = "<group>"; };
+		59CCE2A22A2A984B002F165B /* Wednesday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wednesday.caf; sourceTree = "<group>"; };
+		59CCE2A32A2A984C002F165B /* Birthday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Birthday.caf; sourceTree = "<group>"; };
+		59CCE2A42A2A984C002F165B /* Thursday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thursday.caf; sourceTree = "<group>"; };
+		59CCE2A52A2A984C002F165B /* Saturday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Saturday.caf; sourceTree = "<group>"; };
+		59CCE2A62A2A984C002F165B /* Friday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Friday.caf; sourceTree = "<group>"; };
+		59CCE2B12A2A9A78002F165B /* Monday.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Monday.caf; sourceTree = "<group>"; };
+		59CCE2B32A2A9C3F002F165B /* WeekendMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WeekendMusic.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59895C0B29D630C600934CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59895C0529D630C600934CA6 = {
+			isa = PBXGroup;
+			children = (
+				59895C1029D630C600934CA6 /* WestNews */,
+				59895C0F29D630C600934CA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59895C0F29D630C600934CA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59895C0E29D630C600934CA6 /* WestNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59895C1029D630C600934CA6 /* WestNews */ = {
+			isa = PBXGroup;
+			children = (
+				59B74D362A0EC10C00968A9F /* WestNews.entitlements */,
+				59CAA85129EF2BC300F46629 /* Info.plist */,
+				59895C1129D630C600934CA6 /* WestNewsApp.swift */,
+				59CAA84429E733D800F46629 /* SetupView.swift */,
+				59895C1329D630C600934CA6 /* HomePageView.swift */,
+				59B74D0B2A05966600968A9F /* Modals */,
+				59B74D0D2A05967900968A9F /* Blocks */,
+				59CA1BC12A1BD6CD0058BD9B /* Classes */,
+				59CCE2982A2A6192002F165B /* Audio */,
+				59895C1529D630C700934CA6 /* Assets.xcassets */,
+				59895C1729D630C700934CA6 /* Preview Content */,
+			);
+			path = WestNews;
+			sourceTree = "<group>";
+		};
+		59895C1729D630C700934CA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				59895C1829D630C700934CA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59B74D0B2A05966600968A9F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				59B74D0E2A059BB800968A9F /* HearLatest.swift */,
+				59B74D142A05E2A100968A9F /* AlarmSettings.swift */,
+				59B74D102A059F4600968A9F /* MyDescription.swift */,
+				59B74D122A05A65500968A9F /* ActualAlarm.swift */,
+				59B74D042A03EEB600968A9F /* NightstandView.swift */,
+				59B74D1A2A09BC6200968A9F /* FocusModeView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		59B74D0D2A05967900968A9F /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				594911F42A4F7CCA00999E76 /* LocationBlock.swift */,
+				598305DB29F0B6BE000D717F /* DescriptionBlock.swift */,
+				594911F82A52303600999E76 /* AlarmBuilder.swift */,
+				594911FA2A52333500999E76 /* DynamicFootnote.swift */,
+				59CAA84F29EDFE6C00F46629 /* MediaPlayer.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		59CA1BC12A1BD6CD0058BD9B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				594911F22A4F78EB00999E76 /* LocationManager.swift */,
+				594911BB2A3B934500999E76 /* DescriptionManager.swift */,
+				59B74D172A093DDE00968A9F /* NotifManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		59CCE2982A2A6192002F165B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				59CCE2AF2A2A98B4002F165B /* 7 Days */,
+				59CCE2A12A2A984B002F165B /* Before7am.caf */,
+				59CCE2A32A2A984C002F165B /* Birthday.caf */,
+				59CCE2B32A2A9C3F002F165B /* WeekendMusic.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		59CCE2AF2A2A98B4002F165B /* 7 Days */ = {
+			isa = PBXGroup;
+			children = (
+				59CCE2A02A2A984B002F165B /* Sunday.caf */,
+				59CCE2B12A2A9A78002F165B /* Monday.caf */,
+				59CCE29F2A2A984B002F165B /* Tuesday.caf */,
+				59CCE2A22A2A984B002F165B /* Wednesday.caf */,
+				59CCE2A42A2A984C002F165B /* Thursday.caf */,
+				59CCE2A62A2A984C002F165B /* Friday.caf */,
+				59CCE2A52A2A984C002F165B /* Saturday.caf */,
+			);
+			path = "7 Days";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59895C0D29D630C600934CA6 /* WestNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59895C1C29D630C700934CA6 /* Build configuration list for PBXNativeTarget "WestNews" */;
+			buildPhases = (
+				59895C0A29D630C600934CA6 /* Sources */,
+				59895C0B29D630C600934CA6 /* Frameworks */,
+				59895C0C29D630C600934CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WestNews;
+			productName = PickerPicker;
+			productReference = 59895C0E29D630C600934CA6 /* WestNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59895C0629D630C600934CA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					59895C0D29D630C600934CA6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 59895C0929D630C600934CA6 /* Build configuration list for PBXProject "WestNews" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59895C0529D630C600934CA6;
+			productRefGroup = 59895C0F29D630C600934CA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59895C0D29D630C600934CA6 /* WestNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59895C0C29D630C600934CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CCE2A92A2A984C002F165B /* Before7am.caf in Resources */,
+				59CCE2AA2A2A984C002F165B /* Wednesday.caf in Resources */,
+				59CCE2AB2A2A984C002F165B /* Birthday.caf in Resources */,
+				59CCE2B42A2A9C3F002F165B /* WeekendMusic.mp3 in Resources */,
+				59895C1929D630C700934CA6 /* Preview Assets.xcassets in Resources */,
+				59CCE2AC2A2A984C002F165B /* Thursday.caf in Resources */,
+				59CCE2AD2A2A984C002F165B /* Saturday.caf in Resources */,
+				59CCE2B22A2A9A78002F165B /* Monday.caf in Resources */,
+				59CCE2A72A2A984C002F165B /* Tuesday.caf in Resources */,
+				59CCE2A82A2A984C002F165B /* Sunday.caf in Resources */,
+				59895C1629D630C700934CA6 /* Assets.xcassets in Resources */,
+				59CCE2AE2A2A984C002F165B /* Friday.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59895C0A29D630C600934CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59B74D0F2A059BB800968A9F /* HearLatest.swift in Sources */,
+				594911F92A52303600999E76 /* AlarmBuilder.swift in Sources */,
+				59B74D1B2A09BC6200968A9F /* FocusModeView.swift in Sources */,
+				594911F32A4F78EB00999E76 /* LocationManager.swift in Sources */,
+				594911F52A4F7CCA00999E76 /* LocationBlock.swift in Sources */,
+				59B74D112A059F4600968A9F /* MyDescription.swift in Sources */,
+				59895C1429D630C600934CA6 /* HomePageView.swift in Sources */,
+				598305DC29F0B6BE000D717F /* DescriptionBlock.swift in Sources */,
+				59B74D052A03EEB600968A9F /* NightstandView.swift in Sources */,
+				594911FB2A52333500999E76 /* DynamicFootnote.swift in Sources */,
+				59CAA84529E733D800F46629 /* SetupView.swift in Sources */,
+				59B74D182A093DDE00968A9F /* NotifManager.swift in Sources */,
+				59B74D152A05E2A100968A9F /* AlarmSettings.swift in Sources */,
+				59CAA85029EDFE6C00F46629 /* MediaPlayer.swift in Sources */,
+				594911BC2A3B934500999E76 /* DescriptionManager.swift in Sources */,
+				59895C1229D630C600934CA6 /* WestNewsApp.swift in Sources */,
+				59B74D132A05A65500968A9F /* ActualAlarm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59895C1A29D630C700934CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59895C1B29D630C700934CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59895C1D29D630C700934CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WestNews/WestNews.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WestNews/Preview Content\"";
+				DEVELOPMENT_TEAM = 52AJ924NLH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WestNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "West News";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexwesterlund.WestNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		59895C1E29D630C700934CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WestNews/WestNews.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WestNews/Preview Content\"";
+				DEVELOPMENT_TEAM = 52AJ924NLH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WestNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "West News";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexwesterlund.WestNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59895C0929D630C600934CA6 /* Build configuration list for PBXProject "WestNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59895C1A29D630C700934CA6 /* Debug */,
+				59895C1B29D630C700934CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59895C1C29D630C700934CA6 /* Build configuration list for PBXNativeTarget "WestNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59895C1D29D630C700934CA6 /* Debug */,
+				59895C1E29D630C700934CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59895C0629D630C600934CA6 /* Project object */;
+}
