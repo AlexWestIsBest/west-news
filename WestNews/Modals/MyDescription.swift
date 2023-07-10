@@ -49,6 +49,8 @@ struct MyDescription: View {
                 HStack {
                     ForEach(0..<5) { index in
                         Button(action: {
+                            tap.selectionChanged()
+                            tap.prepare()
                             desc.skinTone = index + 1
                         }) {
                             Text(desc.sex == "female" ? femaleEmojis[index] : maleEmojis[index])
