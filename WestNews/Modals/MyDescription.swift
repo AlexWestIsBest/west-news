@@ -53,10 +53,15 @@ struct MyDescription: View {
                             tap.prepare()
                             desc.skinTone = index + 1
                         }) {
-                            Text(desc.sex == "female" ? femaleEmojis[index] : maleEmojis[index])
-                                .padding(8)
-                                .background(skinTone == index + 1 ? Color(.systemGray5) : Color.clear)
-                                .cornerRadius(12)
+                            ZStack {
+                                Text(femaleEmojis[index])
+                                    .padding(8)
+                                    .background(skinTone == index + 1 ? Color(.systemGray5) : Color.clear)
+                                    .cornerRadius(12)
+                                    .foregroundColor(.clear)
+                                Text(desc.sex == "female" ? femaleEmojis[index] : maleEmojis[index])
+//                                    .animation(Animation.easeIn.delay(Double(index) * 0.07)) // Learn animation
+                            }
                         }
                     }
                 }
