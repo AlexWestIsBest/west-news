@@ -8,6 +8,9 @@
 import SwiftUI
 import CoreLocation
 import WeatherKit
+import UIKit
+import CoreImage
+import CoreGraphics
 
 struct ActualAlarm: View {
     @Binding var actualAlarmModal: Bool
@@ -22,30 +25,39 @@ struct ActualAlarm: View {
     
     var body: some View {
         VStack {
-            Spacer()
-                .frame(height: 16)
-            Text("Good Morning!")
-                .font(.largeTitle)
-                .fontWeight(.black)
-                .tracking(-1)
-                .allowsTightening(true)
-                .lineLimit(1)
-            Spacer()
-                .frame(height: 4)
             Button(action: {
                 isAlarmSet = false
                 actualAlarmModal = false
                 tap.selectionChanged()
                 tap.prepare()
             }) {
-                Text("Turn off alarm")
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .tracking(-0.5)
-                    .foregroundColor(Color("AccentColorButDarker"))
-                    .padding(.bottom)
+                Text("Done")
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding([.trailing, .top], 6)
             }
             
+            Text("Good Morning!")
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .tracking(-1)
+                .allowsTightening(true)
+                .lineLimit(1)
+                .padding(.bottom, 8)
+            
+            AsyncImage(url: URL(string: "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/1250x750.jpg")) { image in
+                image.resizable()
+            } placeholder: {
+                ZStack {
+                    Color(.systemGray5)
+                        .aspectRatio(1250.0 / 750.0, contentMode: .fit)
+                    ProgressView()
+                }
+            }
+            .aspectRatio(contentMode: .fit)
+            .cornerRadius(12)
+            
+            MediaPlayer(autoPlay: true, todaysIsTrueLatestIsFalse: true)
             
             Text("It's \(getFormattedDate()). \(weatherString)")
                 .padding(.bottom)
@@ -54,13 +66,6 @@ struct ActualAlarm: View {
                         weatherString = formatWeatherString(weatherData: weatherData)
                     }
                 }
-            MediaPlayer(autoPlay: true, todaysIsTrueLatestIsFalse: true)
-
-            Image("Newsstand")
-                .resizable()
-                .scaledToFit()
-                .padding(.trailing)
-            
             Spacer()
         }
         .padding()
